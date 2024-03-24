@@ -1,0 +1,169 @@
+/**
+ * Abdulmalik Kambarov
+ * https://akambarov.github.io/
+ */
+
+/* General */
+body {
+    margin: 0;
+    border-top: 5px solid #a6a299;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfa;
+}
+a {
+    text-decoration: underline;
+    color: #a6a299;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #333;
+}
+a:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+h1 {
+    margin: 30px 0 0;
+    letter-spacing: -1px;
+}
+h1 a {
+    font-size: 35px;
+    font-weight: 500;
+    color: #a6a299;
+    text-decoration: none;
+}
+h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #333;
+}
+h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Picture */
+.picture {
+    display: inline-block;
+    margin: 25px auto;
+    -webkit-animation: bounce 1s;
+    -moz-animation: bounce 1s;
+    -o-animation: bounce 1s;
+    animation: bounce 1s;
+    -webkit-perspective: 1000;
+}
+.picture .card, .picture .front, .picture .back, .picture .akambarov, .picture .twitter {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.picture .card {
+    position: relative;
+    padding: 4px;
+    border: 2px solid #a6a299;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -moz-transition: -moz-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.picture:hover .card {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.picture .front, .picture .back {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.picture .front {
+    z-index: 2;
+}
+.picture .back {
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    color: #fff;
+    background: #a6a299 url(/images/twitter.png) center 30px no-repeat;
+    background-size: 50px 50px;
+}
+.picture .back .twitter {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 110px;
+    color: #fff;
+}
+
+/* Content */
+section {
+    width: 680px;
+    margin: 0 auto;
+}
+section p {
+    margin: 0 0 1em;
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    section, h1, h2 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+   }
+}
+
+/* Footer */
+footer {
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+}
+footer .twitter-follow-button {
+    line-height: 20px;
+    font-size: 0;
+}
+footer p {
+    margin: 20px 0 0;
+    color: #585858;
+    font-size: 12px;
+}
+footer iframe {
+    -webkit-animation: fade 1s;
+    -moz-animation: fade 1s;
+    -o-animation: fade 1s;
+    animation: fade 1s;
+}
+
+/* Selection */
+::selection {
+    background: #c2dcf7;
+    text-shadow: none;
+}
