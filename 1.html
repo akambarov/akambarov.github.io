@@ -75,6 +75,425 @@ You are expected to meet the following **requirements**:
 
 ⚠️ **Important:**  
 You **must** create a web page that **exactly matches the design and layout** shown in the attached image, and fulfills **all the listed tasks and assessment criteria**!</pre>
+    <br><br><br><br>
+        <button class="copy-button" onclick="copyCode()">copy</button>
+        <pre id="code-block"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wake the Design</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <!-- Navigation: use the <nav> element as required -->
+    <nav class="main-nav">
+      <div class="logo">
+        <!-- Replace with your actual logo or letter mark (M) -->
+        <a href="#"><img src="img/logo.png" alt="Site Logo" /></a>
+      </div>
+      <div class="menu-toggle">
+        <!-- Optionally use a hamburger icon or placeholder text/icon -->
+        <a href="#"><img src="img/hamburger.png" alt="Menu Toggle" /></a>
+      </div>
+      <ul class="nav-links">
+        <!-- Replace with your actual links -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#coding">Coding</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero / Banner Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>WAKE THE DESIGN</h1>
+        <p>
+          "Create robust, unique and fresh UI/UX experiences.
+          Where every pixel breathes with creative excellence."
+        </p>
+        <a href="#work" class="btn hero-btn">VIEW MY WORK</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- Optional quote or short statement area -->
+    <section class="quote-section">
+      <blockquote>
+        “Great design comes from the heart of simplicity.
+        Where each element is purposeful and beautiful.”
+      </blockquote>
+    </section>
+
+    <!-- Services or Feature Section -->
+    <section class="services" id="work">
+      <div class="container">
+        <!-- Title, or you can use a heading outside the section -->
+        <div class="service-title">
+          <a href="#" class="btn service-btn">Launch Project Now</a>
+        </div>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-box" id="design">
+            <h2>DESIGN</h2>
+            <p>
+              Stunning pages, pixel-perfect forms, design simplicity at its best.
+            </p>
+          </article>
+          <!-- Service 2 -->
+          <article class="service-box" id="coding">
+            <h2>CODING</h2>
+            <p>
+              Clean code, efficient solutions, seamless performance.
+            </p>
+          </article>
+          <!-- Service 3 -->
+          <article class="service-box" id="apps">
+            <h2>APPS</h2>
+            <p>
+              Smooth user experience, intuitive flows, top-notch features.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2>Contact Us...</h2>
+        <p>
+          Curabitur nec blandit metus. Vivamus tempus luctus pellentesque. 
+          Quisque vehicula est, convallis ut tellus. Praesent ultricies.
+        </p>
+
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="visually-hidden">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="visually-hidden">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="visually-hidden">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Message..."></textarea>
+          </div>
+          <button type="submit" class="btn send-btn">SEND</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p>847-333-2218</p>
+        <p>example@gmail.com</p>
+        <p>211 E. Avenue, Chicago, IL</p>
+      </div>
+      <!-- Social or additional links can go here -->
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+***
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  /* Ensure consistent font sizing: use relative units */
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container with fixed max-width for main content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgba(255, 255, 0, 0.8); /* Example hover color */
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+/* HEADER & NAVIGATION */
+.site-header {
+  background-color: #000; /* black background for top section */
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.main-nav .logo img {
+  width: 50px; /* adjust as needed */
+  height: auto;
+  border-radius: 8px; /* example of a slightly rounded logo */
+}
+
+.menu-toggle {
+  display: none; /* Hidden if not implementing mobile responsiveness yet */
+}
+
+/* Navigation links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-links li a:hover {
+  color: #ff0;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem; /* Adjust for spacing */
+  /* Add a background color or background image if needed */
+  background-color: #111;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff0; /* Yellow text if matching design */
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  color: #ccc;
+}
+
+.hero-btn {
+  background-color: #ff0; 
+  color: #000;
+}
+
+.hero-btn:hover {
+  background-color: rgba(255, 255, 0, 0.8);
+}
+
+/* QUOTE SECTION */
+.quote-section {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-style: italic;
+  color: #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
+.quote-section blockquote {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* SERVICES / FEATURES */
+.services {
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+.service-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Example service button styling */
+.service-btn {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+.service-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  flex: 1 1 calc(33.333% - 2rem);
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffea00; /* example bright yellow */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.service-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-box p {
+  color: #333;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 3rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.send-btn {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #444;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVE EXAMPLE (OPTIONAL) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* If you plan to show/hide for mobile */
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .services-grid {
+    flex-direction: column;
+  }
+  .service-box {
+    flex: 1 1 100%;
+  }
+}</pre>
     </div>
 
     <script>
