@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text with Copy Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .code-container {
+            position: relative;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">copy</button>
+        <pre id="code-block">Take a close look at the attached image. Your task is to **create a web page** that matches the **design and layout** shown in the image.
+
+You are expected to meet the following **requirements**:
+
+1. Arrange all your files in proper manner, e.g., files and folders for images and stylesheets should have proper file names. 
+2. Website design should be for fixed max-width.
+3. Semantic tags should be used for building layout.
+4. Navigation should be done with help of &lt;nav&gt; element.
+5. All images for background should be used in proper manner. 
+6. All clickable elements should be hyper references. Any style change should be applied for hover pseudo-class.
+7. Relative and absolute units should be used for size indication.
+8. At least two types of color indication should be used. Transparent elements should be transparent. 
+9. Corresponding font style (including family, size, weights, etc.) should be applied. If font style is not provided use general serif or sans-serif families.
+10. Rounded images or block effects should be done with help of border-radius property.
+11. Form should be created with help of form and other corresponding elements. Placeholders should be specified.
+12. Visual effects, such as shadow should be applied where needed.
+
+---
+
+**Assessment Criteria (Total: 100 marks):**
+
+| Component | Marks |
+|----------|-------|
+| All files arranged in proper manner, e.g., separate folders for stylesheets, images, etc. | 10 |
+| Layout is identical to given in task | 30 |
+| Semantic tags are used for layout | 10 |
+| Classes and/or Ids are used and have meaningful names | 5 |
+| Navigation should be done with help of &lt;nav&gt; element | 5 |
+| All clickable elements – links. Hover effect is applied | 5 |
+| Relative and absolute units used | 10 |
+| Color indication | 10 |
+| Font: family, size, weight | 10 |
+| Visual effects of images, text and blocks, at least one | 5 |
+| **Total** | **100** |
+
+---
+
+⚠️ **Important:**  
+You **must** create a web page that **exactly matches the design and layout** shown in the attached image, and fulfills **all the listed tasks and assessment criteria**!</pre>
+    </div>
+
+    <script>
+        function copyCode() {
+            var codeText = document.getElementById('code-block').innerText;
+            var textArea = document.createElement('textarea');
+            textArea.value = codeText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('copied!');
+        }
+    </script>
+</body>
+</html>
