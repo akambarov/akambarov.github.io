@@ -102,6 +102,11 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - https://x.com/malikkambarov
+    - https://www.facebook.com/abdulmalikkambarov
+    - https://www.linkedin.com/in/akmbrv
+    - https://www.instagram.com/_akmbrv
+    - https://github.com/akambarov
 
 # Analytics
 analytics:
