@@ -107,6 +107,21 @@ social:
     - https://www.linkedin.com/in/akmbrv
     - https://www.instagram.com/_akmbrv
     - https://github.com/akambarov
+  alternate_name:
+    - "Abdulmalikkhon Kambarov"
+    - "Abdulmalik Qambarov"
+    - "Abdulmalikxon Qambarov"
+    - "akambarov"
+    - "akmbrv"
+    - "malikkambarov"
+    - "abdulmalikkambarov"
+  job_title: "AI Enthusiast, Software Developer, Entrepreneur"
+  image: "https://akambarov.github.io/assets/images/me.jpg"
+  works_for: #
+  knows_about:
+    - "Artificial Intelligence"
+    - "Startups"
+  description: "Abdulmalik Kambarov is an Uzbek entrepreneur and AI enthusiast."
 
 # Analytics
 analytics:
