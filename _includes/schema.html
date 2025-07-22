@@ -9,9 +9,17 @@
   {%- else -%}
     "@type": "Person",
     "name": {{ site.social.name | default: site.name | jsonify }},
-    "alternateName": ["Abdulmalikkhon Kambarov", "Abdulmalik Qambarov", "Abdulmalikxon Qambarov"],
     "url": {{ '/' | absolute_url | jsonify }}{% if site.social.links %},
-    "sameAs": {{ site.social.links | jsonify }}{% endif %}
+    "sameAs": {{ site.social.links | jsonify }}{% endif %}{% if site.social.alternate_name %},
+    "alternateName": {{ site.social.alternate_name | jsonify }}{% endif %}{% if site.social.image %},
+    "image": {{ site.social.image | jsonify }}{% endif %}{% if site.social.job_title %},
+    "jobTitle": {{ site.social.job_title | jsonify }}{% endif %}{% if site.social.works_for %},
+    "worksFor": {
+      "@type": "Organization",
+      "name": {{ site.social.works_for | jsonify }}
+    }{% endif %}{% if site.social.knows_about %},
+    "knowsAbout": {{ site.social.knows_about | jsonify }}{% endif %}{% if site.social.description %},
+    "description": {{ site.social.description | jsonify }}{% endif %}
   {%- endif %}
 }
 </script>
