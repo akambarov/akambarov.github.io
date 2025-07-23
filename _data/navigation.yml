@@ -6,5 +6,5 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-   - title: "Sitemap"
-     url: https://akambarov.github.io/sitemap
+   - title: "Feed"
+     url: https://akambarov.github.io/feed.xml
