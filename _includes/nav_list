@@ -8,19 +8,7 @@
       {% for nav in navigation %}
         <li>
           {% if nav.url %}
-            <a href="{{ nav.url | relative_url }}">
-              {% if nav.title == "Feed" %}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" width="16" height="16" style="vertical-align: middle;">
-                  <rect width="8" height="8" rx="1.5" style="stroke:none;fill:orange"/>
-                  <circle style="stroke:none;fill:#fff" cx="2" cy="6" r="1"/>
-                  <path style="stroke:none;fill:#fff" d="M1 4a3 3 0 0 1 3 3h1a4 4 0 0 0-4-4z"/>
-                  <path style="stroke:none;fill:#fff" d="M1 2a5 5 0 0 1 5 5h1a6 6 0 0 0-6-6z"/>
-                </svg>
-              {% else %}
-                <span class="nav__sub-title">{{ nav.title }}</span>
-              {% endif %}
-            </a>
-
+            <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
           {% else %}
             <span class="nav__sub-title">{{ nav.title }}</span>
           {% endif %}
