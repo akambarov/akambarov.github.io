@@ -105,7 +105,7 @@ social:
     - https://x.com/malikkambarov
     - https://www.facebook.com/abdulmalikkambarov
     - https://www.linkedin.com/in/akmbrv
-    - https://www.instagram.com/_akmbrv
+    - https://www.instagram.com/abdulmalikkambarov
     - https://github.com/akambarov
   alternate_name:
     - "Abdulmalikkhon Kambarov"
@@ -147,7 +147,7 @@ author:
       # url: "https://your-website.com"
     - label: "X"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/malikkambarov"
+      # url: "https://x.com/malikkambarov"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -156,7 +156,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/abdulmalikkambarov"
+      # url: "https://www.instagram.com/abdulmalikkambarov"
 
 # Site Footer
 footer:
