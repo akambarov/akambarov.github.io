@@ -25,6 +25,28 @@ search: false
 $global-font-family: 'Sample', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $header-font-family: 'Sample2', sans-serif;
 
+body,
+.site-header,
+.masthead,
+.sidebar,
+.page__footer,
+.page__meta,
+.site-nav,
+.nav__list,
+.nav__items,
+.footer,
+.archive__item-excerpt {
+  font-family: 'Sample', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.sidebar__title,
+.site-title {
+  font-family: 'Sample2', sans-serif !important;
+}
+
 /* disable fade-in intro animation */
 $intro-transition: none;
 $global-transition: none;
