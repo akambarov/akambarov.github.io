@@ -9,5 +9,11 @@ search: false
 $intro-transition: none;
 $global-transition: none;
 
+/* hide follow */
+.author__urls-wrapper,
+.masthead__menu-item--follow {
+  display: none !important;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
