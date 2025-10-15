@@ -15,5 +15,12 @@ $global-transition: none;
   display: none !important;
 }
 
+/* hide masthead__menu */
+@media (max-width: 768px) {
+  .masthead__menu .author__content {
+    display: none !important;
+  }
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
