@@ -5,6 +5,7 @@ search: false
 
 @charset "utf-8";
 
+/* fonts */
 @font-face {
   font-family: 'Sample';
   src: url('{{ "/assets/fonts/sample.woff2" | relative_url }}') format('woff2');
@@ -12,6 +13,17 @@ search: false
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Sample2';
+  src: url('{{ "/assets/fonts/sample2.woff2" | relative_url }}') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+$global-font-family: 'Sample', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$header-font-family: 'Sample2', sans-serif;
 
 /* disable fade-in intro animation */
 $intro-transition: none;
