@@ -5,6 +5,14 @@ search: false
 
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Sample';
+  src: url('{{ "/assets/fonts/sample.woff2" | relative_url }}') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* disable fade-in intro animation */
 $intro-transition: none;
 $global-transition: none;
