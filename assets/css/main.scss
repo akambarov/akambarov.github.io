@@ -17,7 +17,9 @@ $global-transition: none;
 
 /* hide masthead__menu */
 @media (max-width: 768px) {
-  .masthead__menu .author__content {
+  .sidebar,
+  .author__sidebar,
+  .author__content {
     display: none !important;
   }
 }
