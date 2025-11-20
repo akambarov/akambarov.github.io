@@ -116,7 +116,7 @@ social:
     - "malikkambarov"
     - "abdulmalikkambarov"
   job_title: "AI Enthusiast, Software Developer, Entrepreneur"
-  image: "https://akambarov.github.io/assets/images/me.png"
+  image: "https://akambarov.github.io/assets/images/abdulmalikkambarov.png"
   works_for: #
   knows_about:
     - "Artificial Intelligence"
@@ -134,7 +134,7 @@ analytics:
 # Site Author
 author:
   name             : "Abdulmalik Kambarov"
-  avatar           : "/assets/images/me.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/abdulmalikkambarov.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : # "I am an **amazing** person."
   location         : # "Somewhere"
   email            :
